@@ -15,11 +15,6 @@
       "LoadingPhase": "Default"
     },
     {
-      "Name": "ExampleMod",
-      "Type": "Runtime",
-      "LoadingPhase": "Default"
-    },
-    {
       "Name": "HaloMod",
       "Type": "Runtime",
       "LoadingPhase": "Default"
