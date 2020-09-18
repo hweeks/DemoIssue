@@ -7,7 +7,10 @@
 		{
 			"Name": "FactoryGame",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
 		},
 		{
 			"Name": "SML",
@@ -15,9 +18,14 @@
 			"LoadingPhase": "Default"
 		},
 		{
-			"Name": "ExampleMod",
+			"Name": "HaloMod",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"FactoryGame",
+				"Engine",
+				"UMG"
+			]
 		}
 	],
 	"Plugins": [

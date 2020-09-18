@@ -2,7 +2,7 @@
 
 #include "Modules/ModuleManager.h"
 
-class FExampleModModule : public FDefaultGameModuleImpl {
+class FHaloModModule : public FDefaultGameModuleImpl {
 public:
 	virtual void StartupModule() override;
 

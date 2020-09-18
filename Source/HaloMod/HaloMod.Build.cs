@@ -1,12 +1,10 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 using UnrealBuildTool;
 using System.IO;
 using System;
 
-public class ExampleMod : ModuleRules
+public class HaloMod : ModuleRules
 {
-    public ExampleMod(ReadOnlyTargetRules Target) : base(Target)
+    public HaloMod(ReadOnlyTargetRules Target) : base(Target)
     {
         PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
@@ -25,9 +23,12 @@ public class ExampleMod : ModuleRules
             "AssetRegistry",
             "GameplayTasks",
             "AnimGraphRuntime",
-            "Slate", "SlateCore"});
-			
-		if (Target.Type == TargetRules.TargetType.Editor) {
+            "Slate", "SlateCore",
+            "Json"
+            });
+
+
+        if (Target.Type == TargetRules.TargetType.Editor) {
 			PublicDependencyModuleNames.AddRange(new string[] {"OnlineBlueprintSupport", "AnimGraph"});
 		}
         PublicDependencyModuleNames.AddRange(new string[] {"FactoryGame", "SML"});
