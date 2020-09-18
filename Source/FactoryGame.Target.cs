@@ -15,5 +15,6 @@ public class FactoryGameTarget : TargetRules
 		LinkType = TargetLinkType.Modular;
 		//Add your Mod modules here after FactoryGame and SML
 		ExtraModuleNames.AddRange(new[] {"FactoryGame", "SML", "ExampleMod"});
-	}
+        ExtraModuleNames.AddRange(new string[] { "FactoryGame", "SML", "ExampleMod", "HaloMod" });
+    }
 }

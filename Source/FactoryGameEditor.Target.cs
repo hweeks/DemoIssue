@@ -9,5 +9,6 @@ public class FactoryGameEditorTarget : TargetRules
 	{
 		Type = TargetType.Editor;
         ExtraModuleNames.AddRange( new string[] { "FactoryGame", "SML", "ExampleMod" } );
-	}
+        ExtraModuleNames.AddRange(new string[] { "FactoryGame", "SML", "ExampleMod", "HaloMod" });
+    }
 }
